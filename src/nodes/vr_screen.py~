@@ -18,7 +18,7 @@ class image_converter:
     self.bridge = CvBridge()
     left_sub = message_filters.Subscriber('/stereo/left/image_raw', Image)
     right_sub = message_filters.Subscriber('/stereo/right/image_raw', Image)
-    ts = message_filters.ApproximateTimeSynchronizer([left_sub, right_sub], 10,100)
+    ts = message_filters.ApproximateTimeSynchronizer([left_sub, right_sub], 10,30)
     ts.registerCallback(self.callback)
 
   def cropcrop(self,frame):

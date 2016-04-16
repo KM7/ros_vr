@@ -123,7 +123,7 @@ class Parameters():
     cxR = 330
     cyL = 250
     cyR = 250
-    fps = 30
+    fps = 15
     fxL = 270
     fxR = 270
     fyL = 360
